@@ -47,7 +47,6 @@ In this step I cleaned the immigration dataset using UDFs to decode certain colu
 
 ### Step 3: Define the Data Model
 
-### Step 3: Define the Data Model
 #### 3.1 Conceptual Data Model
 
 **Fact Table** - I94 immigration data joined with the US and World GDP per capita datasets
@@ -89,7 +88,7 @@ Columns:
 
 
 
-* Step 4: Run ETL to Model the Data
+**Step 4: Run ETL to Model the Data**
 
 Pipeline Steps:
 
@@ -97,9 +96,6 @@ Pipeline Steps:
 2. Create gdp_world dimension table using df_gdp_world and write to Amazon Redshift
 4. Create gdp_us_state dimension table by selecting relevant columns from df_us_gdp_by_state and write to Amazon Redshift
 5. Create fact table by joining immigration data and gdp dimension tables and write to Amazon Redshift partitioned by arrival_year and arrival_month
-
-
-* Step 5: Complete Project Write Up
 
 #### Step 5: Complete Project Write Up
 * Clearly state the rationale for the choice of tools and technologies for the project:
